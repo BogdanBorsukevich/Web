@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Проектування та розробка веб-застосувань</h1>
+<h2>Борсукевич Богдан КН-31</h2>
+<h2>Варіант 2</h2>
+<a href="index.html" style="margin-bottom: 20px; display: inline-block;">Головна сторінка</a>
+<h2>Завдання</h2>
+<p>Необхідно розробити форму для реєстрації студента у веб-системі. Необхідно заповнити наступні дані:</p>
+<ul>
+    <li>основні дані про студента включаючи ПІБ, назву групи(вибирається зі списку), форму навчання(бюджет або контракт) реалізується у 
+        вигляді перемикача, коротку інформацію про студента, електронна адреса студента;
+    </li>
+    <li>особисті дані студента, включаючи дані паспорта, ідентифікаційний код, рік народження, стать(реалізується у вигляді перемикача).</li>
+</ul>
+
+<form action="" method="POST">
+    <fieldset>
+        <legend>Анкета студента</legend>
+        <label>ПІБ:
+            <input id="Name" type="text">
+        </label>
+        <label>Назва групи:
+            <select>
+                <option>КН-31</option>
+                <option>КН-32</option>
+                <option>АНД-31</option>
+            </select>
+        </label>
+
+        <p>Форма навчання:</p>
+        <label>Бюджет<input id="budget" type="radio" name="form"></label>
+        <label>Контракт<input id="contract" type="radio" name="form"></label>
+
+        <label>Коротка інформація про студента:
+            <input id="about_student" type="text">
+        </label>
+
+        <label>Email:
+            <input id="email" type="email">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Персональні дані</legend>
+
+        <label for="photo">Паспортні дані:
+    <input type="file" id="photo" name="photo" accept="image/*"> <!-- accept лише фото -->
+        </label>
+
+        <label>Ідентифікаційний код:
+            <input type="text" maxlength="8" required pattern="\d{8}" oninput="checkLength(this)"> <!-- required pattern - заборона -->
+        </label>
+
+        <label>Рік народження:
+            <input id="birth_date" type="date">
+        </label>
+
+        <p>Стать:</p>
+        <label>Чоловіча<input id="male" type="radio" name="sex"></label>
+        <label>Жіноча<input id="female" type="radio" name="sex"></label>
+        <label>Інше<input id="other" type="radio" name="sex"></label>
+    </fieldset>
+    <button type="submit" style="margin-top: 10px; margin-left: 2px; display: inline-block;">Відправити</button>
+</form>
+</body>
+</html>
