@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #86e3ce, #d4a5a5, #ffcc67);
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;      
+    margin: 0;                
+    color: #fff;            
+    text-align: center;       
+}
+
+.logo-container {
+    display: flex;      
+    align-items: center;  
+}
+
+.logo {
+    width: 50px;   
+    height: auto;    
+    margin-right: 10px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;       
+    flex-direction: column; 
+    align-items: center;    
+    width: 100%; 
+    background-color: #333; 
+    padding: 20px 0;    
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-left {
+    width: 720px;
+    height: 160px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.section-right {
+    width: 720px;
+    height: 160px;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-section .left {
+    width: 940px;
+    height: 686px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.main-section .right {
+    width: 499px;
+    height: 686px;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.image-section {
+    width: 100%;
+    height: 65%;
+    margin-top: 20px;
+}
+.image-section2 {
+    width: 500px;
+    height: 280px;
+    margin-top: 10px;
+}
+
+.bottom-line {
+    font-size: 30px;
+    width: 1440px;
+    height: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; 
+}
