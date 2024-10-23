@@ -1,0 +1,417 @@
+/* Загальні налаштування */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    background-color: #f5f5f5;
+}
+
+/* Верхня секція з градієнтним фоном */
+.hero-section {
+    width: 100%;
+    height: 820px;
+    background: linear-gradient(135deg, #2E43F0, #6677FF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Навігація */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    gap: 200px; /* Відстань між логотипом та навігаційним меню */
+}
+
+/* Логотип */
+.logo-image {
+    width: 150px;
+    height: auto;
+    margin-right: 40px; /* Додатковий відступ справа від логотипа */
+}
+
+/* Список навігаційних посилань */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Відстань між посиланнями */
+    flex-grow: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Кнопка "Get Started" */
+/* Група кнопок */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Розтягуємо кнопки на всю ширину */
+    margin-top: 20px; /* Відступ зверху */
+    width: 100%; /* Займає всю ширину контейнера */
+}
+
+/* Кнопка "Get Started" */
+.btn-orange {
+    background-color: #FF5505; /* Помаранчевий колір */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Ховер-ефект для кнопки "Get Started" */
+.btn-orange:hover {
+    background-color: #e68900;
+}
+
+/* Сіра кнопка "Free Trial" */
+.btn-gray {
+    background-color: transparent; /* Прозорий фон */
+    color: white; /* Колір тексту */
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 1px solid white; /* Тонка біла границя */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Додаємо анімацію для кольору */
+}
+
+/* Ховер-ефект для сірого кнопки "Free Trial" */
+.btn-gray:hover {
+    background-color: #696969; /* Темніший сірий при наведенні */
+}
+
+/* Вміст секції */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    gap: 120px;
+    margin-top: -70px;
+    margin-left: 80px;
+}
+
+/* Тексти зліва від зображення */
+.text-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+/* Зображення Mockup */
+.mockup-image {
+    width: 700px;
+    height: auto;
+}
+
+.inspiration {
+    font-size: 16px;
+    color: white;
+}
+
+.main-heading {
+    font-size: 40px;
+    color: white;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Лінія-розділювач */
+.divider {
+    border: none;
+    border-top: 2px solid white; /* Біла лінія */
+    width: 100%; /* Розтягуємо на всю ширину блоку */
+    margin: 15px 0; /* Відступи зверху та знизу */
+}
+
+/* Секція з логотипами */
+.logo-section {
+    width: 100%; /* Розтягнуто на всю ширину */
+    height: 1000px;
+    background-color: white; /* Фон секції */
+    padding: 40px 0; /* Відступи зверху та знизу */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо елементи */
+    gap: 30px; /* Відстань між рядами */
+}
+
+/* Ряд з логотипами */
+.logo-row {
+    display: flex;
+    justify-content: center; /* Центруємо логотипи */
+    gap: 20px; /* Відстань між логотипами */
+}
+
+/* Контейнер логотипу */
+.store-logo {
+    width: 200px; /* Зменшена ширина */
+    height: 60px; /* Зменшена висота */
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 10px; /* Відступ між рамкою та зображенням */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.google-logo {
+    width: 200px; /* Менша ширина */
+    height: 60px; /* Пропорційне масштабування */
+    padding: 1px 50px;
+}
+
+/* Індивідуальні стилі для FedEx 2 */
+.fedex-logo {
+    width: 200px; /* Зміна ширини */
+    height: 60px; /* Пропорційне масштабування */
+    padding: 1px 50px;
+}
+.fedx-logo {
+    width: 200px; /* Зміна ширини */
+    height: 60px; /* Пропорційне масштабування */
+    padding: 1px 40px;
+}
+.microsoft-logo {
+    width: 200px; /* Зміна ширини */
+    height: 60px; /* Пропорційне масштабування */
+    padding: 1px 30px;
+}
+
+/* Ефект при наведенні */
+.store-logo:hover {
+    transform: scale(1.1); /* Збільшення при наведенні */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Глибша тінь */
+}
+
+/* Логотипи всередині контейнерів */
+.store-logo img {
+    max-width: 90%; /* Обмежуємо ширину зображення */
+    max-height: 90%; /* Обмежуємо висоту зображення */
+    object-fit: contain; /* Зберігаємо пропорції без обрізання */
+}
+
+/* Контейнер для зображення */
+.image-wrapper {
+    position: relative; /* Встановлюємо для позиціонування дочірніх елементів */
+    margin-top: 40px; /* Відступ між логотипами та новим зображенням */
+    width: 500px; /* Ширина зображення */
+    height: 350px; /* Висота зображення */
+    align-self: flex-start; /* Вирівнюємо вліво */
+    margin-left: 20px;
+}
+
+/* Зображення всередині контейнера */
+.additional-image {
+    width: 100%; /* Займає всю ширину контейнера */
+    height: 100%; /* Займає всю висоту контейнера */
+    object-fit: cover; /* Зберігає пропорції */
+    border-radius: 8px; /* Заокруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Секція для нового транзакції */
+.new-transaction-area {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: left; /* Центруємо заголовок */
+    position: absolute; /* Абсолютне позиціонування */
+    top: 70%; /* Відстань від верху зображення */
+    left: 55%; /* Відстань зліва */
+    background-color: white; /* Білий фон */
+    padding: 20px; /* Відступи всередині секції */
+    border: 1px solid #ddd; /* Світло-сіра обводка */
+    border-radius: 8px; /* Заокруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
+    z-index: 10; /* Встановлюємо верхній шар */
+    margin-top: -40px; /* Негативний відступ, щоб перекрити зображення */
+}
+
+
+/* Заголовок нового транзакції */
+.new-transaction-title {
+    font-size: 20px;
+    color: #333; /* Колір тексту */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+/* Обгортка для людей */
+.people-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Вирівнюємо людей вліво */
+    gap: 15px; /* Відстань між людьми */
+}
+
+/* Клас для людей */
+.person {
+    display: flex;
+    flex-direction: column; /* Ставимо фото і ім'я вертикально */
+    align-items: center; /* Центруємо по горизонталі */
+}
+
+/* Круглі фото */
+.circle-photo {
+    width: 35px; /* Задаємо однакову ширину фото */
+    height: 35px; /* Задаємо однакову висоту фото */
+    border-radius: 50%; /* Залишаємо кругле */
+    object-fit: cover; /* Зберігаємо пропорції */
+    margin-bottom: 5px; /* Відступ знизу для імені */
+}
+
+/* Обгортка для кнопки "Add New" */
+.add-new-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо по горизонталі */
+}
+
+/* Помаранчевий кружечок */
+.add-new-circle {
+    width: 35px; /* Однакова ширина кружечка */
+    height: 35px; /* Однакова висота кружечка */
+    background-color: #FF5505; /* Помаранчевий колір */
+    color: white; /* Колір тексту */
+    border-radius: 50%; /* Заокруглені кути */
+    display: flex;
+    justify-content: center; /* Центруємо текст по горизонталі */
+    align-items: center; /* Центруємо текст по вертикалі */
+    font-size: 20px; /* Розмір шрифту */
+    margin-bottom: 5px; /* Відступ між кружечком та текстом */
+}
+
+/* Текст під кружечком */
+.add-new-text {
+    font-size: 14px; /* Розмір тексту */
+    color: black; /* Колір тексту */
+    text-align: center; /* Центруємо текст */
+}
+
+/* Секція для візуальної частини введення грошей */
+.money-input-area {
+    display: flex;
+    align-items: center; /* Центруємо по вертикалі */
+    margin-top: 20px; /* Відступ зверху */
+    margin-left: -10px;
+    position: relative; /* Для позиціонування знака долара */
+}
+
+/* Поле для введення грошей */
+.money-input {
+    padding: 8px; /* Відступи всередині (зменшено) */
+    font-size: 16px; /* Розмір шрифту */
+    border: 1px solid #ddd; /* Світло-сіра рамка */
+    border-radius: 4px; /* Заокруглені кути */
+    width: 150px; /* Зменшена ширина інпуту */
+    margin: 0 10px; /* Відступи по горизонталі */
+    opacity: 0.5; /* Напівпрозорий фон */
+}
+
+/* Знак долара */
+.currency-sign {
+    background-color: rgba(255, 255, 255, 0.5); /* Напівпрозорий фон */
+    color: black; /* Колір тексту */
+    padding: 8px; /* Відступи всередині (зменшено) */
+    border-radius: 4px; /* Заокруглені кути */
+    font-size: 16px; /* Розмір шрифту */
+}
+
+/* Кнопка "Send the Transfer" */
+.btn-send {
+    background-color: #FF5505; /* Помаранчевий колір */
+    color: white;
+    padding: 8px 16px; /* Менші відступи */
+    font-size: 12px; /* Менший шрифт */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px; /* Відступ зліва від поля вводу */
+    transition: background-color 0.3s;
+}
+/* Секція для фото і тексту */
+.photo-section {
+    display: flex;
+    align-items: center; /* Центруємо вертикально */
+    justify-content: space-between; /* Розтягуємо елементи */
+    margin-bottom: 20px;
+    position: absolute;
+    top: 25%; /* Відстань від верхньої частини */
+    right: -45%; /* Відстань від правої частини */
+    width: 300px; /* Видовжена ширина секції */
+    padding: 10px;
+    background-color: white; /* Білий фон */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    border-radius: 0; /* Прямі кути */
+}
+
+/* Фото */
+.progress-image {
+    width: 80px;
+    height: 40px;
+    border-radius: 50%; /* Кругле фото */
+    object-fit: cover; /* Пропорційне фото */
+    margin-right: 10px;
+    box-shadow: none; /* Прибираємо тінь */
+    border: none; /* Прибираємо рамку */
+}
+
+/* Текстова секція справа від фото */
+.right-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    margin-left: 35%; /* Збільшуємо відступ зліва */
+}
+
+
+/* Тексти */
+.orange-text {
+    font-size: 14px;
+    color: #FF5505;
+    font-weight: 500;
+}
+
+.bold-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.small-description {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+}
